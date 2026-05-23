@@ -1,11 +1,17 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom";
 
-function about() {
+function About() {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <h1>this is about page</h1>
+      <h1>About Page</h1>
+
+      <button onClick={() => navigate("/service")}>
+        Go to Service
+      </button>
     </div>
-  )
+  );
 }
 
-export default about
+export default About;
