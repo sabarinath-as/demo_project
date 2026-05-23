@@ -1,11 +1,17 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom";
 
-function service() {
+function Services() {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <h1>this is services page</h1>
+      <h1>Services Page</h1>
+
+      <button onClick={() => navigate("/contact")}>
+        Go to Contact
+      </button>
     </div>
-  )
+  );
 }
 
-export default service
+export default Services;
